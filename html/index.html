@@ -28,12 +28,17 @@
             Hello, It's Paul
           </div>
           <div
-            class="greetAnim 2xl:text-7xl font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-2xl justify-center md:justify-start"
+            class="inline-block md:hidden greetAnim 2xl:text-7xl font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-xl"
+          >
+            <h1>WELCOME TO MY WORLD</h1>
+          </div>
+          <div
+            class="hidden md:inline-block greetAnim 2xl:text-7xl font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-2xl"
           >
             <h1>WELCOME TO</h1>
           </div>
           <div
-            class="greetAnim 2xl:text-7xl font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-2xl justify-center md:justify-start"
+            class="hidden md:inline-block greetAnim 2xl:text-7xl font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-2xl"
           >
             MY WORLD!
           </div>
@@ -48,24 +53,18 @@
             class="hidden text-justify pb-3 md:text-xs 2xl:text-lg text-[12px]"
           >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              I work as a front-end web developer, focusing on modern HTML, CSS,
+              VueJs, Tailwind and JavaScript. I adore what I do and create
+              beautiful websites and programs.
             </p>
           </div>
 
           <p
-            class="homeContext hidden sm:block text-justify pb-3 md:text-xs 2xl:text-lg text-[12px]"
+            class="homeContext hidden sm:block text-justify py-3 md:text-xs 2xl:text-lg text-[12px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            I work as a front-end web developer, focusing on modern HTML, CSS,
+            VueJs, Tailwind and JavaScript. I adore what I do and create
+            beautiful websites and programs.
           </p>
           <div
             class="mt-[3%] flex items-center gap-2 justify-center sm:justify-start"
@@ -115,7 +114,7 @@
             </h1>
             <button
               id="proj"
-              class="2xl:h-10 lg:h-7 h-6 2xl:text-sm lg:text-xs text-xs 2xl:w-32 lg:w-28 w-20 bg-zinc-950 text-[#ca725e] rounded-xl border-solid border-2 border-[#ca725e] mt-5"
+              class="md:block hidden 2xl:h-10 lg:h-7 h-6 2xl:text-sm lg:text-xs text-xs 2xl:w-32 lg:w-28 w-20 bg-zinc-950 text-[#ca725e] rounded-xl border-solid border-2 border-[#ca725e] mt-5"
             >
               PROJECTS
             </button>
@@ -127,12 +126,10 @@
           <p
             class="text-white fontStyle p-0 flex flex-col justify-center text-justify md:text-xs 2xl:text-lg sm:text-[12px] text-[10px]"
           >
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.”
+            I am a web developer with a talent for constructing exceptional web
+            applications. Possessing a natural curiosity and unwavering
+            enthusiasm, I derive immense joy from acquiring knowledge about
+            emerging technologies and development stacks on a regular basis.
           </p>
         </div>
       </div>
@@ -140,7 +137,7 @@
     <!-- projectsssssssss -->
     <!-- id="projects" class="section" -->
     <section>
-      <div class="grid grid-cols-6 gap-4 my-20">
+      <div id="projects" class="grid grid-cols-6 gap-4 my-20">
         <div
           class="col-start-2 sm:col-end-4 col-end-6 flex items-center 2xl:text-7xl font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-2xl justify-center md:justify-start text-[#ca725e]"
         >
@@ -209,7 +206,7 @@
         <image src="../photo/logo.svg" class="logoSvg" />
         <div class="flex justify-center mb-3">
           <p
-            class="name 2xl:text-7xl font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-[15px] justify-center md:justify-start"
+            class="name 2xl:text-5xl font-bold xl:text-4xl lg:text-3xl sm:text-2xl text-[15px] justify-center md:justify-start"
           >
             PAUL DANIEL MAGBOO
           </p>
@@ -227,9 +224,18 @@
             ><image src="../photo/🦆 icon _instagram_.svg" class="scSvg"
           /></a>
         </div>
+        <p
+          class="flex justify-center gap-4 sm:text-sm text-[10px] text-white fontStyle"
+        >
+          This website was created using<strong
+            class="underline decoration-sky-500 italic"
+            >HTML, Tailwind, JavaScript,</strong
+          >and designed with
+          <strong class="underline decoration-indigo-500 italic">Figma.</strong>
+        </p>
       </div>
       <div
-        class="col-start-3 col-span-2 flex justify-center text-white font-bold fontStyle"
+        class="col-start-2 col-span-4 flex sm:text-sm text-[10px] justify-center text-white font-bold fontStyle"
       >
         <p>© 2023 Paul Daniel Magboo</p>
       </div>
@@ -327,7 +333,7 @@
     justify-content: center;
   }
   .logoSvg {
-    height: 30%;
+    height: 20%;
   }
   p {
     margin: 0px;
@@ -377,7 +383,6 @@
     animation-name: greetTextAnim;
     animation-duration: 4s;
     position: relative;
-    display: inline-block;
   }
   @keyframes greetTextAnim {
     0% {
